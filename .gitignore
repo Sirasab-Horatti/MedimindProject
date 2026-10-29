@@ -1,0 +1,41 @@
+# --- Python ---
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Databases (local user data) ---
+*.db
+*.sqlite3
+
+# --- Uploaded medical reports (sensitive user documents; never commit) ---
+uploads/
+
+# --- Environment / secrets ---
+.env
+backend/.env
+*.local
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# --- Model artifacts (rebuild with: python ml/train.py) ---
+ml/models/*.pkl
+ml/models/evaluation.json
+ml/models/model_comparison.json
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Local scratch ---
+*.log
+assess_report.*
